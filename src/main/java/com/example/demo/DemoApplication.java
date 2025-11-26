@@ -1,11 +1,14 @@
 package com.example.demo;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootApplication
-public class DemoApplication {
-    public static void main(String[] args) {
-        SpringApplication.run(DemoApplication.class, args);
+@SpringBootTest
+class DemoApplicationTests {
+
+    @Test
+    void contextLoads() {
+        // This test verifies that the Spring application context loads successfully
+        // If this test passes, it means all your beans (controllers, services, repositories) are properly configured
     }
 }
